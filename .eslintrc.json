@@ -24,6 +24,12 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "no-console": "warn",
+        "eqeqeq": "error",
+        "curly": "error"
+
     }
 }
