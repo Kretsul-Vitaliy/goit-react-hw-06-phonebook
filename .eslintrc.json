@@ -24,9 +24,7 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], 
-        // The set of allowed extensions is configurable. By default '.jsx' is allowed. 
-        // If you wanted to allow both '.jsx' and '.js',
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // The set of allowed extensions is configurable. By default '.jsx' is allowed.If you wanted to allow both '.jsx' and '.js',
         "semi": ["error", "always"], // ;
         "quotes": ["error", "double"], //""
         "no-console": "warn", // console.log(test)
