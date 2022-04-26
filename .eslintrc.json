@@ -30,8 +30,17 @@
         "no-console": "warn", // console.log(test)
         "eqeqeq": "error", // Requires the use of === and !==
         "curly": "error", // if (foo) { foo++;}
+        // "import/extensions": "off",
         "no-restricted-exports": ["error", { "restrictedNamedExports": ["{default}"] }] //export { default } from "some_module";
     }
+//      "settings": {
+//     "import/resolver": {
+//       "node": {
+//         "extensions": [".js", ".jsx", ".ts", ".tsx"],
+//         "moduleDirectory": ["node_modules", "src/"]
+//       }
+//     }
+//   }
 }
     // "off" or 0 - turn the rule off
     // "warn" or 1 - turn the rule on as a warning (doesn't affect exit code)
