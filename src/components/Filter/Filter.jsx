@@ -1,21 +1,20 @@
-import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
 import { Input } from "../ContactForm/ContactForm.styled";
+import { contactsActions } from "../../redux/contacts";
 
-function Filter({ filter, onChange }) {
+function Filter() {
+  const dispatch = useDispatch();
+  const filterValue = useSelector(state => state.contacts.filter);
+
   return (
     <Input
       type="text"
       name="filter"
-      value={filter}
-      onChange={({ target }) => onChange(target.value)}
+      value={filterValue}
+      onChange={e => dispatch(contactsActions.filterContact(e.target.value))}
       placeholder="Enter name for Search"
     />
   );
 }
-
-Filter.propTypes = {
-  filter: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-};
 
 export default Filter;
